@@ -28,7 +28,6 @@ public class Calculadora {
                 }
                 break;
         }
-        System.out.println(getTotal());
         return total;
     }
     
