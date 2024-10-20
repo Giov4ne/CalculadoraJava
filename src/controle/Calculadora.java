@@ -22,7 +22,7 @@ public class Calculadora {
             case DIVISAO:
                 try{
                     total /= valor;
-                } catch(ArithmeticException e){
+                } catch(ArithmeticException e){ //erro de divisão por zero
                     zerar();
                     JOptionPane.showMessageDialog(null, "Impossível dividir por zero!", "Alerta", JOptionPane.WARNING_MESSAGE);
                 }

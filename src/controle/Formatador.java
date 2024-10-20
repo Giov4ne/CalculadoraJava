@@ -3,11 +3,7 @@ package controle;
 public class Formatador {
     
     public int converterStringParaInteiro(String string){
-        try{
-            return Integer.parseInt(string);
-        } catch(NumberFormatException e){
-            return 0;
-        }
+        return Integer.parseInt(string);
     }
     
     public String converterInteiroParaString(int inteiro){

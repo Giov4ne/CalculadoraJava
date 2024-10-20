@@ -193,6 +193,7 @@ public class Interface extends javax.swing.JFrame {
         jPanel1.add(btDivisao);
 
         tfVisor.setEditable(false);
+        tfVisor.setBackground(new java.awt.Color(255, 255, 255));
         tfVisor.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         tfVisor.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         tfVisor.setText("0");
@@ -348,12 +349,10 @@ public class Interface extends javax.swing.JFrame {
     }//GEN-LAST:event_btDivisaoActionPerformed
 
     private void digitarNoVisor(String caractere){
-        if(tfVisor.getText().length() < 3){
-            if(tfVisor.getText().equals("0"))
-                tfVisor.setText(caractere);
-            else
-                tfVisor.setText(tfVisor.getText().concat(caractere));
-        }
+        if(tfVisor.getText().equals("0"))
+            tfVisor.setText(caractere);
+        else
+            tfVisor.setText(tfVisor.getText().concat(caractere));
     }
     
     private void imprimirResultadoNoVisor(String resultado){
